@@ -21,9 +21,16 @@ class _SignupPageState extends State<SignupPage> {
       child: Scaffold(
         appBar: AppBar(
           title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('News', style: TextStyle(fontWeight: FontWeight.w900),),
-              Text('Sphere'),
+              Row(children: [
+                Text(
+                  'News',
+                  style: TextStyle(fontWeight: FontWeight.w900),
+                ),
+                Text('Sphere'),
+              ]),
+              IconButton(icon: Icon(Icons.person_outline), onPressed: () {})
             ],
           ),
         ),
